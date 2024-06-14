@@ -29,7 +29,7 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  left: 15px;
   bottom: 15px;
   z-index: 996;
   background: #149ddd;
@@ -156,7 +156,7 @@ h6 {
   list-style: none;
 }
 
-.nav-menu > ul > li {
+.nav-menu>ul>li {
   position: relative;
   white-space: nowrap;
 }
@@ -182,7 +182,7 @@ h6 {
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
-.nav-menu li:hover > a {
+.nav-menu li:hover>a {
   text-decoration: none;
   color: #fff;
 }
@@ -190,7 +190,7 @@ h6 {
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
-.nav-menu li:hover > a i {
+.nav-menu li:hover>a i {
   color: #149ddd;
 }
 
@@ -274,6 +274,7 @@ h6 {
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
 }
+
 #hero a.resume-link {
   display: inline-block;
   padding: 10px 20px;
@@ -282,9 +283,11 @@ h6 {
   text-decoration: none;
   border-radius: 5px;
 }
+
 #hero a.resume-link:hover {
   background-color: #007bff;
 }
+
 @media screen and (min-width: 1024px) {
   #hero {
     background-size: cover;
@@ -298,6 +301,7 @@ h6 {
     min-height: 200px;
     min-width: 300px;
   }
+
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -321,7 +325,7 @@ section {
   padding-bottom: 30px;
 }
 
-.section-title h2 {
+/* .section-title h2 {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
@@ -329,10 +333,10 @@ section {
   padding-bottom: 20px;
   position: relative;
   color: #45505b;
-  /*color: #173b6c; */
-}
+  color: #173b6c;
+} */
 
-.section-title h2::after {
+/* .section-title h2::after {
   content: "";
   position: absolute;
   display: block;
@@ -341,7 +345,7 @@ section {
   background: #149ddd;
   bottom: 0;
   left: calc(50% - 25px);
-}
+} */
 
 .section-title p {
   margin-bottom: 0;
@@ -354,7 +358,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #149ddd;
 }
 
 .about .content ul {
@@ -467,9 +471,24 @@ section {
   z-index: 1;
 }
 
+.portfolio .portfolio-wrap .assistance {
+
+  width: 100%;
+  height: 20%;
+  cursor: pointer;
+  transition: all ease-in-out 3s;
+  object-position: top;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-wrap .assistance:hover {
+  overflow-y: auto;
+  object-position: bottom;
+}
+
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
+  /* background: rgba(255, 255, 255, 0.5); */
   position: absolute;
   left: 0;
   right: 0;
@@ -504,10 +523,12 @@ section {
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   background: rgba(20, 157, 221, 0.95);
 }
+
 .portfolio .portfolio-wrap .portfolio-links p {
   font-size: 14px;
 }
-.portfolio .portfolio-wrap .portfolio-links a + a {
+
+.portfolio .portfolio-wrap .portfolio-links a+a {
   border-left: 1px solid #37b3ed;
 }
 
@@ -524,6 +545,74 @@ section {
   bottom: 0;
 }
 
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# pricing
+--------------------------------------------------------------*/
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+
+}
+
+.custom-scrollbar2::-webkit-scrollbar {
+  width: 4px;
+
+}
+
+.custom-scrollbar3::-webkit-scrollbar {
+  width: 4px;
+
+}
+
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+
+  background-color: #FF7300;
+  /* Set the background color of the thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1eefd !important;
+  /* Set the background color of the track */
+}
+
+.custom-scrollbar2::-webkit-scrollbar-thumb {
+  background-color: #9347E1;
+
+  /* Set the background color of the thumb */
+}
+
+.custom-scrollbar2::-webkit-scrollbar-track {
+  background: #f1eefd !important;
+  /* Set the background color of the track */
+}
+
+.custom-scrollbar3::-webkit-scrollbar-thumb {
+  background-color: #F02828;
+  /* Set the background color of the thumb */
+}
+
+.custom-scrollbar3::-webkit-scrollbar-track {
+  background: #f1eefd !important;
+
+  /* Set the background color of the track */
+}
+
+/*--------------------------------------------------------------
+# pricing
+--------------------------------------------------------------*/
+
+
+
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -536,10 +625,11 @@ section {
   background: #fff;
   box-shadow: 2px 2px 4px gray;
   border-radius: 20px;
+  transform: scale(1);
 }
 
 .services .icon-box:hover {
-  transform: scale(1);
+  transform: scale(1.1);
 }
 
 .services .icon-box .icon {
@@ -552,6 +642,7 @@ section {
   transition: ease-in-out 0.3s;
   position: relative;
 }
+
 /* .services .icon-box .icon svg {
   position: absolute;
   top: 0;
@@ -562,24 +653,30 @@ section {
   transition: 0.5s;
   position: relative;
 }
+
 .services .iconbox-blue i {
-  color: #47aeff;
+  color: #EB7810;
 }
+
 .services .iconbox-orange i {
-  color: #ffa76e;
+  color: #9347E1;
 }
+
 .services .iconbox-pink i {
-  color: #e80368;
+  color: #F02828;
 }
+
 .services .icon-box h4 {
   font-weight: 600;
   margin: 10px 0 15px 0;
   font-size: 22px;
 }
+
 .services .icon-box h4 a {
   color: #45505b;
   transition: ease-in-out 0.3s;
 }
+
 .services .icon-box p {
   line-height: 24px;
   font-size: 14px;
@@ -590,7 +687,7 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  padding-bottom: 130px;
+  padding-bottom: 48px;
 }
 
 .contact .info {
@@ -692,7 +789,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br + br {
+.contact .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 

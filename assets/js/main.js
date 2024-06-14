@@ -235,3 +235,134 @@
    */
   new PureCounter();
 })();
+
+$('.owl-testimonials').owlCarousel({
+  loop: true,
+  nav: false,
+  dots: false,
+  center: false,
+  margin: 20,
+  responsiveClass: true,
+  autoplay: true,
+  autoplayTimeout: 5500,
+  autoplaySpeed: 1500,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 2
+    },
+    1000: {
+      items: 4
+    },
+
+  }
+})
+
+$('.owl-brandslider').owlCarousel({
+  loop: true,
+  nav: false,
+  dots: false,
+  center: false,
+  margin: 20,
+  responsiveClass: true,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplaySpeed: 1200,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 7
+    },
+  }
+})
+
+
+var a = 0;
+
+$(document).ready(function () {
+  // Check if the element with class 'counter' exists
+  if ($('.counter').length) {
+    $(window).scroll(function () {
+      var oTop = $('.counter').offset().top - window.innerHeight;
+      if (a == 0 && $(window).scrollTop() > oTop) {
+        $('.counter-value').each(function () {
+          var $this = $(this),
+            countTo = $this.attr('data-count');
+          $({
+            countNum: $this.text()
+          }).animate({
+            countNum: countTo
+          },
+            {
+              duration: 2000,
+              easing: 'swing',
+              step: function () {
+                $this.text(Math.floor(this.countNum));
+              },
+              complete: function () {
+                $this.text(this.countNum);
+                //alert('finished');
+              }
+            });
+        });
+        a = 1;
+      }
+    });
+  }
+});
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const form = document.querySelector('.php-email-form');
+//   if (form) {
+//     form.addEventListener('submit', function (event) {
+//       event.preventDefault();
+//       const action = form.getAttribute('action');
+//       const formData = new FormData(form);
+//       php_email_form_submit(form, action, formData);
+//     });
+//   }
+// });
+
+// function php_email_form_submit(thisForm, action, formData) {
+//   thisForm.querySelector('.loading').classList.add('d-block');
+
+//   fetch(action, {
+//     method: 'POST',
+//     body: formData,
+//     headers: {
+//       'X-Requested-With': 'XMLHttpRequest'
+//     }
+//   })
+//     .then(response => {
+//       if (response.ok) {
+//         return response.json();
+//       } else {
+//         throw new Error(`${response.status} ${response.statusText} ${response.url}`);
+//       }
+//     })
+//     .then(data => {
+//       thisForm.querySelector('.loading').classList.remove('d-block');
+//       if (data.message === 'OK') {
+//         thisForm.querySelector('.sent-message').classList.add('d-block');
+//         thisForm.reset();
+//       } else {
+//         throw new Error(data.message || 'Form submission failed and no error message returned from: ' + action);
+//       }
+//     })
+//     .catch(error => {
+//       displayError(thisForm, error);
+//     });
+// }
+
+// function displayError(thisForm, error) {
+//   thisForm.querySelector('.loading').classList.remove('d-block');
+//   thisForm.querySelector('.error-message').innerHTML = error;
+//   thisForm.querySelector('.error-message').classList.add('d-block');
+// }
