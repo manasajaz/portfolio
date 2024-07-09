@@ -3,6 +3,45 @@ body {
   color: #272829;
 }
 
+
+
+.owl-testimonials .owl-carousel .owl-dot.active {
+  background: #149ddd;
+  width: 20px;
+  margin-right: 5px;
+  height: 8px;
+  border-radius: 10px;
+}
+
+.owl-testimonials .owl-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+}
+
+.owl-testimonials.owl-carousel button.owl-dot {
+  background: #707070;
+  width: 20px;
+  margin-right: 5px;
+  height: 8px;
+  border-radius: 10px;
+}
+
+.owl-testimonials .owl-carousel .item img {
+  width: 20px;
+}
+
+.owl-carousel.owl-testimonials img {
+  width: unset !important;
+}
+
+.owl-carousel.owl-testimonials .owl-stage-outer {
+  overflow: visible !important;
+}
+
+
 a {
   color: #149ddd;
   text-decoration: none;

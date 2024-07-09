@@ -239,7 +239,7 @@
 $('.owl-testimonials').owlCarousel({
   loop: true,
   nav: false,
-  dots: false,
+  dots: true,
   center: false,
   margin: 20,
   responsiveClass: true,

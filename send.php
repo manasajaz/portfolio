@@ -37,20 +37,18 @@ if (isset($_POST["name"]) && !empty($_POST["name"]) && isset($_POST["ip2loc_ip"]
     // }
 ?>
 
-    <script type="text/javascript">
-        alert("Form is successfully submitted!");
-        window.location.href = '/';
-    </script>
+<script type="text/javascript">
+window.location.replace("thank-you<?php echo $parameter; ?>");
+</script>
 
 <?php
 } else {
-    // Redirect to index file or display an error message
+
 ?>
 
-    <script type="text/javascript">
-        alert("Form is not submitted");
-        // You can add redirection here if needed
-    </script>
+<script type="text/javascript">
+window.location.replace("/");
+</script>
 
 <?php
 }
