@@ -239,7 +239,7 @@
 $('.owl-testimonials').owlCarousel({
   loop: true,
   nav: false,
-  dots: true,
+  dots: false,
   center: false,
   margin: 20,
   responsiveClass: true,
@@ -254,11 +254,14 @@ $('.owl-testimonials').owlCarousel({
       items: 2
     },
     1000: {
-      items: 4
+      items: 3
     },
 
   }
 })
+
+
+
 
 $('.owl-brandslider').owlCarousel({
   loop: true,

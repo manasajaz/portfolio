@@ -21,6 +21,12 @@ body {
 
 }
 
+
+.owl-testimonials .owl-stage {
+  display: flex !important;
+  height: 100% !important;
+}
+
 .owl-testimonials.owl-carousel button.owl-dot {
   background: #707070;
   width: 20px;

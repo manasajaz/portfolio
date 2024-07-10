@@ -242,21 +242,21 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-basic">
                         <a target="_blank" href="https://to-do-list-anas.netlify.app/">
                             <div class="portfolio-wrap">
-                                <img src="./assets/img/todo.png" class="img-fluid" alt="" />
+                                <img src="./assets/img/todo.jpeg" class="img-fluid" alt="" />
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-basic">
                         <a target="_blank" href="https://digital-clock-anas.netlify.app/">
                             <div class="portfolio-wrap">
-                                <img src="./assets/img/clock.jpg" class="img-fluid" alt="" />
+                                <img src="./assets/img/clock.jpeg" class="img-fluid" alt="" />
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-basic">
                         <a target="_blank" href="https://calculater-anas.netlify.app/">
                             <div class="portfolio-wrap">
-                                <img src="./assets/img/calculater.png" class="img-fluid" alt="" />
+                                <img src="./assets/img/calculater.jpeg" class="img-fluid" alt="" />
                             </div>
                         </a>
                     </div>
@@ -288,17 +288,52 @@
                             </div>
                         </a>
                     </div>
-                    <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-landing-page">
-                        <a target="_blank" href="https://thoughtful-anas.netlify.app/">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-landing-page">
+                        <a data-fancybox="gallery" href="assets/img/aspire-lp.png">
                             <div class="portfolio-wrap">
-                                <img src="assets/img/assistance.png" class="assistance" alt="" />
+                                <img src="assets/img/aspire.jpeg" class="img-fluid" alt="" />
                             </div>
                         </a>
-                    </div> -->
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-landing-page">
+                        <a data-fancybox="gallery" href="assets/img/article-lp.png">
+                            <div class="portfolio-wrap">
+                                <img src="assets/img/article.jpeg" class="img-fluid" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-landing-page">
+                        <a data-fancybox="gallery" href="assets/img/curator-lp.png">
+                            <div class="portfolio-wrap">
+                                <img src="assets/img/curator.jpeg" class="img-fluid" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-landing-page">
+                        <a data-fancybox="gallery" href="assets/img/help-lp.png">
+                            <div class="portfolio-wrap">
+                                <img src="assets/img/help.jpeg" class="img-fluid" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-landing-page">
+                        <a data-fancybox="gallery" href="assets/img/agile-lp.png">
+                            <div class="portfolio-wrap">
+                                <img src="assets/img/agile.jpeg" class="img-fluid" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-landing-page">
+                        <a data-fancybox="gallery" href="assets/img/elite-lp.png">
+                            <div class="portfolio-wrap">
+                                <img src="assets/img/elite.jpeg" class="img-fluid" alt="" />
+                            </div>
+                        </a>
+                    </div>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-wordpress">
                         <a target="_blank" href="https://anas-ecomerce-website.netlify.app/">
                             <div class="portfolio-wrap">
-                                <img src="assets/img/my-ecomerce.png" class="img-fluid" alt="" />
+                                <img src="assets/img/my-ecomerce.jpeg" class="img-fluid" alt="" />
                             </div>
                         </a>
                     </div>
